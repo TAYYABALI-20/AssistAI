@@ -1,0 +1,182 @@
+:is(section.hero) {
+    transform: all 1.5s ease-in-out;
+}
+
+:is(.hero-content) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin: 6rem 0;
+    transform: all 1.5s ease-in-out;
+}
+
+:is(.hero-content) h1 {
+    color: #f1f1f1;
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+}
+
+:is(.hero-content, h1) span {
+    background: linear-gradient(98deg, #8d4aff, #fd4b9e 50%, #fd9f4d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+:is(.hero-content) p {
+    color: #f1f1f1;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    line-height: 1.6;
+    width: 45%;
+}
+
+:is(.hero-content) button {
+    margin: 2rem;
+    border: 1px solid #f1f1f1;
+    outline: 0;
+    padding: 1rem;
+    width: 9rem;
+    font-size: 1.1rem;
+    transition: all 1.5s ease-in-out;
+    cursor: pointer;
+}
+
+:is(.hero-content) button:nth-child(1) {
+    background: linear-gradient(98deg, #8d4aff, #fd4b9e 50%, #fd9f4d);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+:is(.hero-content) button:nth-child(2) {
+    background: #f1f1f1;
+    color: #000000;
+}
+
+:is(.my-chatbot) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 2.5rem;
+    gap: 2rem;
+    border: 1px solid rgba(150, 150, 150, 150);
+    background: linear-gradient(45deg, #1c0056, #3f0059);
+    width: 50%;
+    height: auto;
+    transform: all 1.5s ease-in-out;
+}
+
+:is(.user),
+:is(.bot) {
+    position: relative;
+    display: flex;
+    gap: 0.8rem;
+}
+
+:is(.user) img,
+:is(.bot) img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.2rem;
+    aspect-ratio: 1;
+}
+
+:is(.bot) img {
+    width: 100px;
+    height: 50px;
+    margin-left: -2rem;
+}
+
+:is(.user) .user-info,
+:is(.bot) .bot-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-left: 3.25rem;
+}
+
+:is(.user, .user-info) h4,
+:is(.bot, .bot-info) h4 {
+    display: flex;
+    align-items: stretch;
+    gap: 0.5rem;
+    color: #ffffff;
+}
+
+:is(.user, .user-info, h3) small,
+:is(.bot, .bot-info, h3) small {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+:is(.user, .user-info, h3) p,
+:is(.bot, .bot-info, h3) p {
+    color: #aeaeae;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+:is(.message-input) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(45deg, #7e35fd, #ff3b96 50%, #ff983e);
+    padding: 1rem;
+}
+
+:is(.message-input) input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+:is(.message-input) input::placeholder {
+    color: #aaaaaa;
+}
+
+:is(.submit-image) {
+    position: absolute;
+    right: 0.6rem;
+    background: #f5f5f5;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+:is(.submit-image) img {
+    width: 1.5rem;
+    aspect-ratio: 1;
+    vertical-align: middle;
+}
+
+:is(article) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 6rem 0;
+    transform: all 1.5s ease-in-out;
+}
+
+:is(article) h5 {
+    color: #aaaaaa;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+:is(article) .teams {
+    display: flex;
+    gap: 2rem;
+    transform: all 1.5s ease-in-out;
+}

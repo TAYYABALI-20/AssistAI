@@ -1,0 +1,47 @@
+:is(section.ready-to-begin) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 6rem 0;
+    transition: all 1.5s ease-in-out;
+}
+
+:is(section.ready-to-begin, h1) span {
+    background: linear-gradient(98deg, #5600eb, #f30071 50%, #f37100);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+:is(section.ready-to-begin) h5 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #aaaaaa;
+    transition: all 1.5s ease-in-out;
+}
+
+:is(.get-started) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: linear-gradient(45deg, #2e006b, #2e006b);
+    width: 75%;
+    height: 20rem;
+    transition: all 1.5s ease-in-out;
+}
+
+:is(.get-started) button {
+    border: 0;
+    outline: 0;
+    padding: 1rem;
+    width: 12rem;
+    background: linear-gradient(98deg, #15ff7e, #e8ff1c 50%, #ff631b);
+    color: rgba(25, 25, 25, 0.8);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}

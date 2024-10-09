@@ -1,0 +1,62 @@
+:is(section.productivity) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+:is(section) h1 {
+    color: rgb(225, 225, 225);
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+}
+
+:is(section, h1) span {
+    background: linear-gradient(98deg, #701ffc, #ff1783 50%, #ff851a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+:is(.productivity-cards) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem 0;
+    cursor: pointer;
+    transition: all 1.5s ease-in-out;
+}
+
+:is(.productivity-card) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+    width: 25rem;
+    height: 18rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(45deg, #25006e, #58007e);
+    border-bottom: 1px solid #aaaaaa;
+    transform: scale(1);
+    transition: all 1.5s ease-in-out;
+    transition-delay: 0.2s;
+}
+
+:is(.productivity-card):hover {
+    transform: scale(1.05);
+}
+
+:is(.productivity-card) h2 {
+    color: #ffffff;
+    letter-spacing: 0.1rem;
+}
+
+:is(.productivity-card) p {
+    color: rgb(175, 175, 175);
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 500;
+}

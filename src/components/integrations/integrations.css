@@ -1,0 +1,181 @@
+:is(section.integrations) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 6rem 0;
+}
+
+:is(section.integrations, h1) span {
+    background: linear-gradient(98deg, #6711fd, #ff0b7d 50%, #fc7c0d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+:is(.integrations-cards) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+:is(.integrations-card) {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(45deg, #210064, #470066);
+    border: 1px solid #aaaaaa;
+    border-radius: 0.5rem;
+    width: 75%;
+    height: 31rem;
+    margin: 1rem 0;
+    padding: 2rem;
+    transform: all 1.5s ease-in-out;
+}
+
+:is(.integrations-card):nth-child(3) {
+    gap: 4rem;
+}
+
+:is(.integrations-card-1-img),
+:is(.integrations-card-info) {
+    width: 50%;
+}
+
+:is(.integrations-card-1-img) img {
+    width: 29.5rem;
+    aspect-ratio: 1;
+}
+
+:is(.integrations-card-info) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+}
+
+:is(.integrations-card-info) h2 {
+    color: #ffffff;
+}
+
+:is(.integrations-card-info) p,
+:is(.customizations, .customization, .customization-info) p {
+    color: rgb(200, 200, 200);
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+:is(.integrations-card-info) button {
+    border: 1px solid #f1f1f1;
+    border-radius: 0.5rem;
+    outline: 0;
+    padding: 1rem;
+    width: 9rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: linear-gradient(98deg, #6711fd, #ff0b7d 50%, #fc7c0d);
+    color: #ffffff;
+    transition: all 1.5s ease-in-out;
+    cursor: pointer;
+}
+
+:is(.integrations-card) .customizations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    background: linear-gradient(45deg, #200061, #440061);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    width: 32rem;
+    height: 26rem;
+}
+
+:is(.customizations) .customization {
+    display: flex;
+    gap: 0.8rem;
+    box-shadow:
+        0 0 0.5rem rgba(0, 0, 0, 0.1),
+        0 0 0.5rem rgba(0, 0, 0, 0.1);
+    padding: 1.15rem;
+
+}
+
+:is(.customizations, .customization) img {
+    width: 1.5rem;
+    aspect-ratio: 1;
+}
+
+:is(.customizations, .customization) .customization-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+:is(.customizations, .customization, .customization-info) h3 {
+    color: #ffffff;
+}
+
+:is(.assistance) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    background: linear-gradient(45deg, #200061, rgb(70, 0, 100));
+    border-radius: 0.5rem;
+    padding: 2rem;
+    width: 32rem;
+    height: 28rem;
+}
+
+:is(.integrations-card) .manage-data-access {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+    margin-left: auto;
+    background: linear-gradient(45deg, #200061, #440061);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 32rem;
+    height: 28rem;
+}
+
+:is(.manage-data-access) .data {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #270074, #4d006e);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+:is(.manage-data-access, .data) .data-images {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+:is(.manage-data-access, .data) .border-line {
+    width: 100%;
+    height: 1px;
+    background: #afafaf;
+}
+
+:is(.manage-data-access, .data) .data-properties {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    color: #aaaaaa;
+    font-size: 1rem;
+}
+
+:is(.manage-data-access, .data, .data-properties) li {
+    list-style: none;
+}

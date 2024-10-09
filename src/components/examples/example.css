@@ -1,0 +1,35 @@
+:is(section.examples) {
+    transform: all 1.5s ease-in-out;
+}
+
+:is(.examples-content) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin: 6rem 0;
+    transform: all 1.5s ease-in-out;
+}
+
+:is(.examples-content) h1 {
+    color: #f1f1f1;
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+}
+
+:is(.examples-content, h1) span {
+    background: linear-gradient(98deg, #8d4aff, #fd4b9e 50%, #fd9f4d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+:is(.examples-content) p {
+    color: #f1f1f1;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    line-height: 1.6;
+    width: 45%;
+}

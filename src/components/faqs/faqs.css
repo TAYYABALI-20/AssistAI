@@ -1,0 +1,109 @@
+:is(section.faqs) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 6rem 0;
+    transition: all 1.5s ease-in-out;
+}
+
+:is(section.faqs, h1) span {
+    background: linear-gradient(98deg, #5f02ff, #ff0479 50%, #ff7904);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+:is(.questions) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+    transition: all 1.5s ease-in-out;
+    width: 50%;
+}
+
+:is(.question) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: linear-gradient(45deg, #360b80, #3c0880 0%, #3c0880);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: #aaaaaa;
+    transition: all 1.5s ease-in-out;
+    transition-delay: 1s;
+    cursor: pointer;
+}
+
+:is(.question)::after {
+    position: absolute;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #aaaaaa;
+    transition: all 1.5s ease-in-out;
+    cursor: pointer;
+}
+
+:is(.expand) {
+    height: 8.25rem;
+    transition: height 1.5s ease-in-out;
+}
+
+:is(.collapse) {
+    height: 3.25rem;
+    transition: height 1.5s ease-in-out;
+}
+
+:is(.expand)::after {
+    content: '-';
+    top: 18%;
+    transform: translateY(-50%) rotate(-180deg);
+    transition: all 1s ease-in-out;
+}
+
+:is(.collapse)::after {
+    content: '+';
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    transition: all 1s ease-in-out;
+}
+
+:is(.question) p {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+:is(.answer) p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.3;
+    width: 95%;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.5s ease-in-out,
+        visibilitiy 0.5s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+:is(.show) p {
+    opacity: 1;
+    visibility: visible;
+    transition:
+        opacity 4s ease-in-out,
+        visibility 4s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+:is(.hidden) p {
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.5s ease-in-out,
+        visibility 0.5s ease-in-out;
+    transition-delay: 0.1s;
+}

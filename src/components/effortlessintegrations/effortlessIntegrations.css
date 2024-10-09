@@ -1,0 +1,44 @@
+:is(section.effortless-integrations) {
+    transform: all 1.5s ease-in-out;
+}
+
+:is(.effortless-integrations-content) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin: 6rem 0;
+    transform: all 1.5s ease-in-out;
+}
+
+:is(.effortless-integrations-content) h1 {
+    color: #f1f1f1;
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+}
+
+:is(.effortless-integrations) h1:nth-child(2) {
+    text-align: center;
+}
+
+:is(.effortless-integrations-content, h1) span {
+    background: linear-gradient(98deg, #8d4aff, #fd4b9e 50%, #fd9f4d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+:is(.effortless-integrations-content) p {
+    color: #f1f1f1;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    line-height: 1.6;
+    width: 45%;
+}
+
+:is(.fix) {
+    transform: translateY(1.5rem);
+    flex-wrap: wrap;
+}
